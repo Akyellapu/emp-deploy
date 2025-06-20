@@ -1,0 +1,22 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: Employee-Tracking-System
+
+  datasource:
+    url: jdbc:postgresql://ep-little-base-a83tfhl9-pooler.eastus2.azure.neon.tech:5432/neondb?sslmode=require
+    username: neondb_owner
+    password: npg_eP7OdxXmFh1s
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+
+  main:
+    allow-circular-references: true
